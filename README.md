@@ -10,7 +10,9 @@
 </ul>
 
 <h2>Structure</h2>
-![image](https://github.com/user-attachments/assets/f4e3ce23-23c9-4082-af71-bc357b4f4fa0)
+
+![image](https://github.com/user-attachments/assets/9a2197df-692f-40f4-9173-aaecf8040282)<br>
+
 
 <h2>Language: Python, html</h2>
 <ul>
