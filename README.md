@@ -10,41 +10,7 @@
 </ul>
 
 <h2>Structure</h2>
-├── Dockerfile
-├── WebSec
-│   ├── __init__.py
-│   ├── __pycache__
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── db.sqlite3
-├── docker-compose.yml
-├── manage.py
-├── myapp
-│   ├── __init__.py
-│   ├── __pycache__
-│   ├── admin.py
-│   ├── apps.py
-│   ├── forms.py
-│   ├── migrations
-│   │   ├── 0001_initial.py
-│   │   ├── __init__.py
-│   │   └── __pycache__
-│   ├── models.py
-│   ├── templates
-│   │   └── myapp
-│   │       ├── admin.html
-│   │       ├── forgot.html
-│   │       ├── home.html
-│   │       ├── login.html
-│   │       ├── register.html
-│   │       └── user.html
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── requirements.txt
-└── sessions
+![image](https://github.com/user-attachments/assets/f4e3ce23-23c9-4082-af71-bc357b4f4fa0)
 
 <h2>Language: Python, html</h2>
 <ul>
