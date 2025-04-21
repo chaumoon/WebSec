@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSec</title>
+</head>
+<body>
+    <style>
+        body{
+        background-color: #9CDCF1;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-weight: 600;
+        margin-left: 100px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    table{
+        margin-bottom: 20px;
+        border-collapse: collapse;
+    }
+    table th, td{
+        border: solid 2px black;
+        background-color: aliceblue;
+        padding: 10px;
+    }
+    </style>
+    <h1>Xin chào {{ name }}</h1>
+    <h2>Danh sách các user</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for u in users %}
+            <tr>
+                <td>{{ u.id }}</td>
+                <td>{{u.username}}</td>
+                <td>{{u.email}}</td>
+                <td>{{u.password}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <form action="/logout/" method="POST">
+        {% csrf_token %}
+        <button type="submit">Đăng xuất</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# __pycache__ và các file biên dịch Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database cục bộ
+*.db
+*.sqlite3
+
+.git/
+.gitignore
+
+.env
+
+.vscode/
+.idea/
+
+venv/
+env/
+ENV/
+
+*.log
+*.pot
+*.py[cod]
+*$py.class
+
+Dockerfile.dev
+docker-compose.override.yml
+

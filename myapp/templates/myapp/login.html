@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSec</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #9CDCF1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button{
+            margin-left: -170px;
+        }
+    </style>
+    <h1>Trang đăng nhập</h1>
+    <form action="", method="POST" class="form">
+        {% csrf_token %}
+        <div>
+            {{ form }}
+        </div>
+        <input type="submit" value="Đăng nhập">
+    </form>
+    {% if notice %}
+    <p style="color:red;">{{ notice }}</p>
+    {% endif %}
+    <button onclick="window.location.href='/forgot'">Quên mật khẩu</button>
+
+
+</body>
+</html>
